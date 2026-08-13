@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Understanding The Universe — a student-built science publication exploring physics, astronomy, mathematics and the ideas behind our universe.">
+<title>Understanding The Universe</title><link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header"><nav class="nav container">
+<a class="brand" href="#home"><span class="brand-mark">✦</span><span>Understanding<br><b>The Universe</b></span></a>
+<button class="menu-btn" aria-label="Open menu">☰</button>
+<div class="nav-links"><a href="#explore">Explore</a><a href="#topics">Topics</a><a href="#notes">Research Notes</a><a href="#about">About</a><button id="themeToggle" class="icon-btn">☾</button></div>
+</nav></header>
+
+<main id="home">
+<section class="hero"><div class="stars"></div><div class="container hero-grid">
+<div><p class="eyebrow">A student-built science publication</p><h1>Look deeper.<br><span>Question everything.</span></h1>
+<p class="hero-copy">Explore physics, astronomy, mathematics and the ideas we use to understand the universe — from the foundations to the strange edge of modern science.</p>
+<div class="hero-actions"><a class="btn primary" href="#explore">Start exploring</a><a class="btn ghost" href="#about">The story behind it</a></div>
+<div class="hero-stats"><div><b>Physics</b><span>Mechanics · QM · Relativity</span></div><div><b>Astronomy</b><span>Stars · Black holes · Cosmos</span></div><div><b>Math</b><span>Tools behind the ideas</span></div></div>
+</div><div class="hero-orbit" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="planet"></div><div class="glow"></div></div>
+</div></section>
+
+<section id="explore" class="section container"><div class="section-head"><div><p class="eyebrow">Start here</p><h2>Build your understanding</h2></div><p>Not every idea needs to be learned at once. Pick a level and follow your curiosity.</p></div>
+<div class="level-grid">
+<article class="level"><span>01</span><h3>Beginner</h3><p>Build the language of science: matter, forces, energy, fields and the scale of the cosmos.</p><a href="#topics">Explore foundations →</a></article>
+<article class="level"><span>02</span><h3>Intermediate</h3><p>Go deeper into mechanics, black holes, electromagnetism and the mathematical ideas underneath.</p><a href="#topics">Go deeper →</a></article>
+<article class="level"><span>03</span><h3>Advanced</h3><p>Take on quantum mechanics, spacetime diagrams, mathematical physics and research-style questions.</p><a href="#topics">Challenge yourself →</a></article>
+</div></section>
+
+<section id="topics" class="section dark-section"><div class="container"><div class="section-head"><div><p class="eyebrow">The library</p><h2>Explore the universe</h2></div><p>Search the collection or filter by subject.</p></div>
+<div class="toolbar"><input id="search" type="search" placeholder="Search articles, concepts..." aria-label="Search articles"><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="physics">Physics</button><button class="filter" data-filter="astronomy">Astronomy</button><button class="filter" data-filter="math">Mathematics</button><button class="filter" data-filter="quantum">Quantum</button></div></div>
+<div id="articleGrid" class="article-grid">
+<article class="card" data-cat="physics astronomy" data-title="Black Holes"><div class="card-art blackhole">◉</div><div class="card-body"><span class="tag">Astronomy · Intermediate</span><h3>Black Holes</h3><p>Event horizons, gravity, spacetime and why black holes are more than cosmic vacuum cleaners.</p><a href="articles/black-holes.html">Read article →</a></div></article>
+<article class="card" data-cat="quantum physics" data-title="Quantum Mechanics"><div class="card-art quantum-art">Ψ</div><div class="card-body"><span class="tag">Quantum · Advanced</span><h3>Quantum Mechanics</h3><p>Probability amplitudes, wavefunctions and the strange rules governing microscopic systems.</p><a href="articles/quantum-mechanics.html">Read article →</a></div></article>
+<article class="card" data-cat="physics" data-title="Newtonian Lagrangian Hamiltonian Mechanics"><div class="card-art mechanics">F=ma</div><div class="card-body"><span class="tag">Physics · Advanced</span><h3>Three Views of Mechanics</h3><p>Newtonian, Lagrangian and Hamiltonian mechanics — three powerful ways to describe motion.</p><a href="articles/mechanics.html">Read article →</a></div></article>
+<article class="card" data-cat="astronomy physics" data-title="Hawking Radiation"><div class="card-art hawking">∿</div><div class="card-body"><span class="tag">Black holes · Advanced</span><h3>Hawking Radiation</h3><p>How quantum field theory near an event horizon leads to an unexpected prediction.</p><a href="articles/hawking-radiation.html">Read article →</a></div></article>
+<article class="card" data-cat="math" data-title="Gamma Function"><div class="card-art gamma">Γ</div><div class="card-body"><span class="tag">Mathematics · Advanced</span><h3>The Gamma Function</h3><p>A remarkable extension of the factorial beyond whole numbers.</p><a href="articles/gamma-function.html">Read article →</a></div></article>
+<article class="card" data-cat="physics" data-title="Invisible Forces"><div class="card-art field">↯</div><div class="card-body"><span class="tag">Physics · Beginner</span><h3>Invisible Forces & Fields</h3><p>Learn how fields let us describe interactions without imagining invisible strings pulling objects.</p><a href="articles/fields.html">Read article →</a></div></article>
+</div><p id="empty" class="empty" hidden>No articles match that search yet.</p></div></section>
+
+<section id="notes" class="section container"><div class="section-head"><div><p class="eyebrow">Research journal</p><h2>Notes from the journey</h2></div><p>A place for questions, discoveries, reading notes and computational experiments.</p></div>
+<div class="notes-grid"><article><span class="note-date">NOTE 001</span><h3>Why do we use models?</h3><p>A model is not reality. It is a structured way of making predictions about reality.</p></article>
+<article><span class="note-date">NOTE 002</span><h3>From school science to IISER</h3><p>This site began as a school project. The next chapter is to keep learning, checking ideas carefully and documenting the journey.</p></article>
+<article><span class="note-date">NOTE 003</span><h3>Python for physics</h3><p>Small simulations can make abstract equations tangible: projectile motion, oscillations, random walks and numerical integration.</p></article></div></section>
+
+<section id="about" class="about section"><div class="container about-grid"><div><p class="eyebrow">The story</p><h2>Built from curiosity.</h2></div><div><p>Understanding The Universe began as a student project in Class 11, driven by a fascination with cosmology, black holes, quantum mechanics and the mathematics behind physical ideas.</p><p>This new version keeps that original curiosity while making the site easier to read, explore and grow into a long-term science portfolio.</p><p class="signature">— Khush Poshiya</p></div></div></section>
+</main>
+<footer><div class="container footer-grid"><div><div class="brand footer-brand"><span class="brand-mark">✦</span><span>Understanding <b>The Universe</b></span></div><p>Science, curiosity and the long road toward understanding.</p></div><div><b>Explore</b><a href="#topics">Library</a><a href="#notes">Research Notes</a><a href="#about">About</a></div><div><b>Original site</b><a href="https://khushposhiya.wordpress.com/" target="_blank" rel="noopener">WordPress archive ↗</a></div></div><div class="container copyright">© <span id="year"></span> Understanding The Universe · Built as a static site.</div></footer>
+</body></html>
